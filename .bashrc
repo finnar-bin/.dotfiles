@@ -15,6 +15,7 @@ alias ls='ls --color=auto'
 alias code='codium'
 alias edit_config='sudo vim /etc/nixos/configuration.nix'
 alias dotfile='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias full_system_update='sudo pacman -Syu && sudo paru -Syu'
 
 ### Command prompt setup ###
 
