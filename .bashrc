@@ -12,10 +12,9 @@ PROMPT_COMMAND=__prompt_command
 
 ### Aliases ###
 alias ls='ls --color=auto'
-alias code='codium'
-alias edit_config='sudo vim /etc/nixos/configuration.nix'
+alias code='flatpak run com.vscodium.codium --no-sandbox'
 alias dotfile='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias full_system_update='sudo pacman -Syu && sudo paru -Syu'
+alias pfetch='PF_ASCII="linux" pfetch'
 
 ### Command prompt setup ###
 
@@ -78,11 +77,15 @@ function __prompt_command {
 	PS1="`get_working_dir` `parse_git_branch`"
 
 	if [ $EXIT != 0 ]; then
-		PS1+=" \[\e[m\]\[\e[1;31m\]🍺 \[\e[m\]"
+		PS1+="\n\[\e[m\]\[\e[1;31m\](¬_¬\") \[\e[m\]"
 	else
-		PS1+=" \[\e[m\]🍺 "
+		PS1+="\n\[\e[m\](¬‿¬) "
 	fi
 }
 
 # PS1='[\u@\h \W]\$ '
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
