@@ -4,6 +4,7 @@ Personal linux dotfile configs
 ### Config files for the following packages:
 
 - bash
+- zsh (ohmyzsh must be installed)
 - alacritty
 
 ### Usage
