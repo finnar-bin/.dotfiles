@@ -104,10 +104,15 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dotfile='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+alias pfetch='PF_ASCII="linux" pfetch'
 
 # init starship
 eval "$(starship init zsh)"
 
+# node version manager config
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# run pfetch
+pfetch
