@@ -6,6 +6,7 @@ Personal linux dotfile configs
 - bash
 - zsh (ohmyzsh must be installed)
 - alacritty
+- starship (must install starship)
 
 ### Usage
 
