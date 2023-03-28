@@ -105,14 +105,22 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dotfile='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias pfetch='PF_ASCII="linux" pfetch'
+alias codium="flatpak run com.vscodium.codium "
+alias gc="git commit -m "
+alias gp="git push"
 
 # init starship
-eval "$(starship init zsh)"
-
-# node version manager config
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# eval "$(starship init zsh)"
 
 # run pfetch
-pfetch
+# pfetch
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/nar/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/home/nar/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/nar/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/nar/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Volta config for node version management
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"

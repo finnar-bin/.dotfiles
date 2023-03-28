@@ -7,6 +7,7 @@ Personal linux dotfile configs
 - zsh (ohmyzsh must be installed)
 - alacritty
 - starship (must install starship)
+- Volta (node version manager)
 
 ### Usage
 
