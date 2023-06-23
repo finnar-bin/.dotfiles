@@ -105,9 +105,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dotfile='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias pfetch='PF_ASCII="linux" pfetch'
-alias codium="flatpak run com.vscodium.codium "
-alias gc="git commit -m "
-alias gp="git push"
+alias c="flatpak run com.vscodium.codium "
 
 # init starship
 # eval "$(starship init zsh)"
