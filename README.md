@@ -9,6 +9,7 @@ Personal linux dotfile configs
 - starship (must install starship)
 - Volta (node version manager)
 - husky config (vscode, codium npx error fix)
+- VSCodium settings
 
 ### Usage
 

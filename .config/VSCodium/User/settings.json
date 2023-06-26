@@ -1,0 +1,50 @@
+{
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "editor.fontFamily": "'FiraCode Nerd Font', 'monospace', monospace",
+  "editor.fontLigatures": true,
+  "window.menuBarVisibility": "toggle",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.fontSize": 15,
+  "workbench.colorTheme": "Better Solarized Light",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.iconTheme": "bearded-icons",
+  "editor.linkedEditing": true,
+  "javascript.preferences.renameMatchingJsxTags": true,
+  "typescript.preferences.renameMatchingJsxTags": true,
+  "javascript.autoClosingTags": true,
+  "typescript.autoClosingTags": true,
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": false
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.sideBar.location": "right",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.title": "${dirty}${rootName}${separator}${appName}",
+  "todo-tree.highlights.useColourScheme": true,
+  "workbench.editor.untitled.hint": "hidden",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "javascript": "javascriptreact"
+  }
+}
