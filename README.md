@@ -8,6 +8,7 @@ Personal linux dotfile configs
 - alacritty
 - starship (must install starship)
 - Volta (node version manager)
+- husky config (vscode, codium npx error fix)
 
 ### Usage
 
