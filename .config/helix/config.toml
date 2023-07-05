@@ -1,0 +1,15 @@
+theme = "catppuccin_latte"
+
+[editor]
+line-number = "relative"
+mouse = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+left = ["mode", "spinner", "selections"]
+center = ["file-name", "file-modification-indicator"]
+right = ["diagnostics", "version-control", "position"]
