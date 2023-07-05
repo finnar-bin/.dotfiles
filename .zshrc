@@ -105,7 +105,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dotfile='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias pfetch='PF_ASCII="linux" pfetch'
-alias c="flatpak run com.vscodium.codium "
+alias c="codium "
+alias hx="/usr/bin/helix"
 
 # init starship
 # eval "$(starship init zsh)"
@@ -113,12 +114,12 @@ alias c="flatpak run com.vscodium.codium "
 # run pfetch
 # pfetch
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/nar/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/home/nar/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/nar/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/nar/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-
 # Volta config for node version management
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/nar/Developer/google-cloud-sdk/path.zsh.inc' ]; then . '/home/nar/Developer/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/nar/Developer/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/nar/Developer/google-cloud-sdk/completion.zsh.inc'; fi
