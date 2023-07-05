@@ -11,6 +11,7 @@ Personal linux dotfile configs
 - Volta (node version manager)
 - husky config (vscode, codium npx error fix)
 - VSCodium settings
+- Helix editor config
 
 ### Usage
 
