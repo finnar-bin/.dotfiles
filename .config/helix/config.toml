@@ -3,6 +3,9 @@ theme = "catppuccin_latte"
 [editor]
 line-number = "relative"
 mouse = true
+bufferline = "multiple"
+rulers = [100]
+color-modes = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -13,3 +16,13 @@ select = "underline"
 left = ["mode", "spinner", "selections"]
 center = ["file-name", "file-modification-indicator"]
 right = ["diagnostics", "version-control", "position"]
+
+[editor.indent-guides]
+render = true
+character = "⸽"
+
+[editor.lsp]
+display-inlay-hints = true
+
+[editor.file-picker]
+hidden = false
