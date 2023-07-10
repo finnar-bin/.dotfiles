@@ -12,6 +12,7 @@ Personal linux dotfile configs
 - husky config (vscode, codium npx error fix)
 - VSCodium settings
 - Helix editor config
+- Neovim config (using lazy.vim as package manager)
 
 ### Usage
 
