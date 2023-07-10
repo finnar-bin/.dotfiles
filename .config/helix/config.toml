@@ -4,7 +4,7 @@ theme = "catppuccin_latte"
 line-number = "relative"
 mouse = true
 bufferline = "multiple"
-rulers = [100]
+rulers = [80]
 color-modes = true
 
 [editor.cursor-shape]
@@ -22,7 +22,8 @@ render = true
 character = "⸽"
 
 [editor.lsp]
-display-inlay-hints = true
+#display-inlay-hints = true
+auto-signature-help = false
 
 [editor.file-picker]
 hidden = false
