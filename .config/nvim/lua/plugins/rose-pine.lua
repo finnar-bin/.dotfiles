@@ -50,10 +50,4 @@ return {
       StatusLine = { fg = "love", bg = "love", blend = 10 },
     },
   },
-  -- {
-  --   "LazyVim/LazyVim",
-  --   opts = {
-  --     colorscheme = "rose-pine",
-  --   },
-  -- },
 }
