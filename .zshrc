@@ -107,6 +107,7 @@ alias dotfile='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias pfetch='PF_ASCII="linux" pfetch'
 alias c="codium "
 alias hx="/usr/bin/helix"
+alias v="/usr/bin/nvim"
 
 # init starship
 # eval "$(starship init zsh)"
