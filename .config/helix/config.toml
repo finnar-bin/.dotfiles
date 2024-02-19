@@ -1,11 +1,16 @@
-theme = "catppuccin_latte"
+theme = "everforest_dark_modified"
 
 [editor]
 line-number = "relative"
 mouse = true
 bufferline = "multiple"
-rulers = [80]
 color-modes = true
+scrolloff = 12
+text-width = 100
+
+[editor.soft-wrap]
+enable = true
+wrap-at-text-width = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -15,11 +20,10 @@ select = "underline"
 [editor.statusline]
 left = ["mode", "spinner", "selections"]
 center = ["file-name", "file-modification-indicator"]
-right = ["diagnostics", "version-control", "position"]
+right = ["diagnostics", "spacer", "version-control", "position"]
 
 [editor.indent-guides]
 render = true
-character = "⸽"
 
 [editor.lsp]
 #display-inlay-hints = true
@@ -27,3 +31,22 @@ auto-signature-help = false
 
 [editor.file-picker]
 hidden = false
+
+# Custom Keymaps
+[keys.normal]
+H = "goto_previous_buffer"
+L = "goto_next_buffer"
+C-h = "jump_view_left"
+C-l = "jump_view_right"
+C-j = "half_page_down"
+C-k = "half_page_up"
+a = ["append_mode", "collapse_selection"]
+i = ["insert_mode", "collapse_selection"]
+
+[keys.insert.j]
+k = "normal_mode" # Maps `jk` to exit insert mode
+
+[keys.normal.space]
+q = { q = ":qa", w = ":wqa"} # Adds a quit all and write quit all command to the space menu
+b = { b = "buffer_picker", c = ":bc"} #Adds a buffer picker and buffer close
+z = ":toggle gutters.line-numbers.min-width 48 3"
