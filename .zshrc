@@ -108,7 +108,7 @@ alias pfetch='PF_ASCII="linux" pfetch'
 alias c="codium "
 alias hx="/usr/bin/helix"
 alias v="/usr/bin/nvim"
-
+alias lg="/usr/bin/lazygit"
 # init starship
 # eval "$(starship init zsh)"
 
@@ -124,3 +124,20 @@ if [ -f '/home/nar/Developer/google-cloud-sdk/path.zsh.inc' ]; then . '/home/nar
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/nar/Developer/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/nar/Developer/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Disable caps lock
+setxkbmap -option ctrl:nocaps
+
+# Add go to path
+export PATH="$PATH:$HOME/go/bin"
+
+# Start autojump
+[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
+
+# pnpm
+export PNPM_HOME="/home/nar/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
