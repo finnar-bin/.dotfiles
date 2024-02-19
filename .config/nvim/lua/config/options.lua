@@ -3,3 +3,5 @@
 -- Add any additional options here
 vim.opt.scrolloff = 12
 -- vim.opt.background = "light"
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
