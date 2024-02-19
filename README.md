@@ -13,6 +13,7 @@ Personal linux dotfile configs
 - VSCodium settings
 - Helix editor config
 - Neovim config (using lazy.vim as package manager)
+- Zellij (must isntall Zellij)
 
 ### Usage
 
