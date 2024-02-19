@@ -11,6 +11,69 @@
   },
   {
     "key": "ctrl+shift+s",
-    "command": "workbench.action.files.saveFiles"
+    "command": "workbenchiles.action.files.saveFiles"
   }
+  // Neovim extension stuff
+  // Exit insert mode with jk
+  // {
+  //   "command": "vscode-neovim.compositeEscape1",
+  //   "key": "j",
+  //   "when": "neovim.mode == insert && editorTextFocus",
+  //   "args": "j"
+  // },
+  // {
+  //   "command": "vscode-neovim.compositeEscape2",
+  //   "key": "k",
+  //   "when": "neovim.mode == insert && editorTextFocus",
+  //   "args": "k"
+  // },
+  // // Half page up/down
+  // {
+  //   "command": "cursorPageDown",
+  //   "key": "ctrl+d",
+  //   "when": "neovim.mode == normal && editorTextFocus"
+  // },
+  // {
+  //   "command": "cursorPageUp",
+  //   "key": "ctrl+u",
+  //   "when": "neovim.mode == normal && editorTextFocus"
+  // },
+  // // Toggle file explorer
+  // {
+  //   "command": "workbenchiles.view.explorer",
+  //   "key": "ctrl+e",
+  //   "when": "neovim.mode == normal && editorTextFocus"
+  // },
+  // {
+  //   "command": "workbenchiles.action.toggleSidebarVisibility",
+  //   "key": "ctrl+e",
+  //   "when": "!editorTextFocus"
+  // },
+  // // Toggle global search
+  // {
+  //   "command": "workbenchiles.view.search",
+  //   "key": "ctrl+/",
+  //   "when": "neovim.mode == normal && editorTextFocus"
+  // },
+  // {
+  //   "command": "workbenchiles.action.toggleSidebarVisibility",
+  //   "key": "ctrl+/",
+  //   "when": "!editorTextFocus"
+  // },
+  // // Find in file
+  // {
+  //   "command": "actions.find",
+  //   "key": "ctrl+r",
+  //   "when": "neovim.mode == normal && editorTextFocus"
+  // },
+  // // Undo / redo
+  // {
+  //   "command": "undo",
+  //   "key": "u"
+  // },
+
+  // {
+  //   "command": "redo",
+  //   "key": "U"
+  // }
 ]

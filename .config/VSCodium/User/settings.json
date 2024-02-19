@@ -1,12 +1,12 @@
 {
   "terminal.integrated.defaultProfile.linux": "zsh",
-  "editor.fontFamily": "'FiraCode Nerd Font', 'monospace', monospace",
+  "editor.fontFamily": "'FantasqueSansM Nerd Font Mono', 'monospace', monospace",
   "editor.fontLigatures": true,
   "window.menuBarVisibility": "toggle",
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
-  "editor.fontSize": 15,
-  "workbench.colorTheme": "Better Solarized Light",
+  "editor.fontSize": 19,
+  "workbench.colorTheme": "Everforest Dark",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.iconTheme": "bearded-icons",
   "editor.linkedEditing": true,
@@ -19,7 +19,7 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "editor.codeActionsOnSave": {
-    "source.organizeImports": false
+    "source.organizeImports": "never"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -39,12 +39,73 @@
   },
   "window.title": "${dirty}${rootName}${separator}${appName}",
   "todo-tree.highlights.useColourScheme": true,
-  "workbench.editor.untitled.hint": "hidden",
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "emmet.includeLanguages": {
     "vue-html": "html",
     "javascript": "javascriptreact"
-  }
+  },
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "editor.scrollBeyondLastLine": false,
+  "editor.lineNumbers": "relative",
+  "editor.cursorSurroundingLines": 12,
+  "workbench.list.smoothScrolling": true,
+  "editor.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "editor.cursorBlinking": "expand",
+  "zenMode.fullScreen": false,
+  "terminal.integrated.fontSize": 19,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.maxColumn": 60,
+  "editor.scrollbar.vertical": "hidden",
+  // VIM Options
+  "vim.leader": " ",
+  "vim.easymotion": true,
+  "vim.cursorStylePerMode.visual": "underline-thin",
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-s>": false,
+    "<C-z>": false,
+    "<C-f>": false
+  },
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["L"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["H"],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      "before": ["K"],
+      "after": ["g", "h"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["k", "k"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "workbench.editor.empty.hint": "hidden"
 }
