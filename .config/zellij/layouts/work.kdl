@@ -1,4 +1,11 @@
 layout {
+    default_tab_template {
+        children
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+    }
+
     tab_template name="compact_tab" {
         children
         pane size=1 borderless=true {
@@ -6,31 +13,39 @@ layout {
         }
     }
 
-    compact_tab name="Helix" split_direction="vertical" focus=true {
-        pane size="20%" split_direction="horizontal" {
-            pane {
-                size "30%"
-                name "Digital Rain"
-                command "cmatrix"
-                args "-b" "-s" "-a"
-                close_on_exit true
-            }
+    // compact_tab name="Helix" split_direction="vertical" focus=true {
+    //     pane size="20%" split_direction="horizontal" {
+    //         pane {
+    //             size "30%"
+    //             name "Digital Rain"
+    //             command "cmatrix"
+    //             args "-b" "-s" "-a"
+    //             close_on_exit true
+    //         }
 
-            pane {
-                size "20%"
-                name "Now"
-                command "tclock"
-                args "clock" "-S"
-            }
+    //         pane {
+    //             size "20%"
+    //             name "Now"
+    //             command "tclock"
+    //             args "clock" "-S"
+    //         }
 
-            pane {
-                size "50%"
-                name "Resources"
-                command "htop"
-            }
-        }
+    //         pane {
+    //             size "50%"
+    //             name "Resources"
+    //             command "htop"
+    //         }
+    //     }
+    //     pane {
+    //         name "Editor"
+    //         command "helix"
+    //         args "."
+    //         focus true
+    //     }
+    // }
+
+    compact_tab name="Helix" focus=true {
         pane {
-            name "Editor"
             command "helix"
             args "."
             focus true
