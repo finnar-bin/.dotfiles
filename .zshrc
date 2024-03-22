@@ -126,7 +126,7 @@ if [ -f '/home/nar/Developer/google-cloud-sdk/path.zsh.inc' ]; then . '/home/nar
 if [ -f '/home/nar/Developer/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/nar/Developer/google-cloud-sdk/completion.zsh.inc'; fi
 
 # Disable caps lock
-setxkbmap -option ctrl:nocaps
+# setxkbmap -option ctrl:nocaps
 
 # Add go to path
 export PATH="$PATH:$HOME/go/bin"
