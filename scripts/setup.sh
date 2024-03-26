@@ -2,6 +2,7 @@
 
 # Create alias on currently existing .zshrc
 echo "alias dotfile='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'" >> $HOME/.zshrc
+source $HOME/.zshrc
 
 # Add .dotfiles to gitignore
 echo ".dotfiles" >> .gitignore
