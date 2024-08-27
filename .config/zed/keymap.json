@@ -35,7 +35,9 @@
       // Chat with AI
       "space a c": "assistant::ToggleFocus",
       // Go to file with `gf`
-      "g f": "editor::OpenExcerpts"
+      "g f": "editor::OpenExcerpts",
+      // Open workspace search
+      "space F": "workspace::NewSearch"
     }
   },
   {

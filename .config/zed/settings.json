@@ -19,7 +19,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Atelier Savanna Dark"
+    "dark": "Sandcastle"
   },
   "confirm_quit": true,
   "tabs": {
@@ -40,5 +40,11 @@
     "line_height": {
       "custom": 0
     }
+  },
+  "project_panel": {
+    "indent_size": 10
+  },
+  "scrollbar": {
+    "git_diff": false
   }
 }
